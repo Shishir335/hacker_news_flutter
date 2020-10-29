@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:hacker_news_app_flutter/widges/top25_article_list.dart';
+import './screens/top25_article_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Hacker News",
-      home: TopArticleList(),
+      home:
+          TopArticleList(), //defining the first page. I could do it by the page routing here globally but as the
+      //app has only 2 scrrens it is not necessary.
     );
   }
 }
